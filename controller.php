@@ -37,10 +37,10 @@ function getList(){
                   <td >' . $data['local_evento'] . '</td>
                   <td >' . $data['data_evento'] . '</td>
                   <td class="btn-content">
-                     <button value="edit" onclick="edit(' . $data['id'] . ')" type="button" name="edit" id="edit" class="btn btn-warning">
+                     <button value="edit" onclick="edit(' . $data['id'] . ')" type="button" name="edit" id="edit">
                         <i class="fa fa-edit"></i>Editar
                       </button>
-                     <button value="delet" onclick="delet(' . $data['id'] . ')" type="button" name="edit" id="edit" class="btn btn-danger">
+                     <button value="delet" onclick="delet(' . $data['id'] . ')" type="button" name="edit" id="edit">
                         <i class="fa fa-trash" aria-hidden="true"></i>Deletar
                      </button>
                   </td>
