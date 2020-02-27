@@ -10,9 +10,6 @@ switch ($op) {
    case 'save':
       save();
       break;
-   case 'setInfo':
-      setInfo();
-      break;
    case 'delet':
       delet();
       break;
@@ -39,9 +36,6 @@ function getList(){
                     <td class="btn-content">
                       <button value="edit" onclick="edit(' . $data['id'] . ')" type="button" name="edit" id="edit" class="btn btn-warning">
                           <i class="fa fa-edit"></i>Editar
-                      </button>
-                      <button value="view" data-toggle="modal" data-target="#modalDatalhes" onclick="view(' . $data['id'] . ')" type="button" name="view" id="view" class="btn btn-primary">
-                          <i class="fa fa-info" aria-hidden="true"></i>Visualizar
                       </button>
                       <button value="delet" onclick="delet(' . $data['id'] . ')" type="button" name="edit" id="edit" class="btn btn-danger">
                           <i class="fa fa-trash" aria-hidden="true"></i>Deletar
@@ -101,6 +95,16 @@ function save(){
            exit('O Evento foi inserido!');
         }
      } 
+  }
+  mysqli_close($conn);
+}
+
+function delet(){
+  include_once("conexao.php");
+  if (isset($_POST)) {
+     $id = $_POST['id'];
+     mysqli_query($conn, "DELETE FROM events WHERE id='$id'")or die($mysqli->error);
+     exit('O registro '.$id.' foi deletado!');
   }
   mysqli_close($conn);
 }
