@@ -33,6 +33,7 @@ function getList() {
            "aaSorting": []
         });
         $('.dataTables_length').addClass('bs-select');
+        limparCampos();
      }
 
   }).fail(function (error) {
