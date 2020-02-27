@@ -2,9 +2,27 @@
 
 ## Aplicação PHP E JAVASCCRIPT
 
-Para o funcionamento correto da aplicação deve-se alterar as variáveis de ambiente do arquivo conexao de acordo com os parâmetro do seu app, xampp, ou wampserver.
+Projeto, sistema de cadastramento de eventos, em PHP e Javascript.
 
-Deve-se criar a base de dados e as tabelas de acordo com os parâmetros aqui expressos:
+## Informações Gerais
 
+- Para o funcionamento correto desta aplicação deve-se alterar as variáveis de ambiente do arquivo conexao de acordo com os parâmetro do seu app, xampp, ou wampserver, caso seja necessário.
+
+## Instalação
+
+Para que o projeto funcione corretamente você deverá clonar o projeto e inicializá-lo por meio do xampp, ou wampserver.
+
+```
+$hostname = 'localhost';
+$user = 'root';
+$password = '';
+$database = 'crud-event';
+```
+
+## Obs:
+#### Deve-se criar a base de dados e as tabelas de acordo com os parâmetros aqui expressos:
+
+```
 database: crud-event
 tabelas: events, estados
+```
