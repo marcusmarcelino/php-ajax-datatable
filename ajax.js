@@ -125,3 +125,25 @@ function limparCampos() {
   $('#dataEvento').val('');
   $("#editRowID").val('');
 }
+
+function delet(id) {
+  if (confirm('Você tem certeza??')) {
+     $.ajax({
+        url: 'controller.php?op=delet',
+        method: 'POST',
+        dataType: 'text',
+        data: {
+           id: id
+        },
+        success: function (response) {
+           window.location.reload();
+        }
+     }).done(function (response) {
+        alert(response);
+     }).fail(function (error) {
+        console.log(error);
+     });
+  } else {
+     alert('Exclusão cancelado!!')
+  }
+}
