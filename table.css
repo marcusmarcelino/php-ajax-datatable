@@ -22,15 +22,15 @@ tbody{
 }
 
 #tabelaDeEventos tbody tr:nth-child(2n){
-  background-color: rgba(128, 120, 199, 0.842);
+  background-color: rgb(96, 82, 231);
 }
 
 #tabelaDeEventos tbody tr:nth-child(2n+1){
-  background-color: rgba(79, 72, 148, 0.46);
+  background-color: rgba(42, 31, 160, 0.55);
 }
 
 #tabelaDeEventos tbody tr:hover{
-  background-color: rgba(82, 75, 63, 0.39);
+  background-color: rgb(64, 50, 216);
 }
 
 table.dataTable.no-footer {
