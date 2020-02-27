@@ -7,6 +7,11 @@ hr{
   border: .4px solid cornflowerblue;
 }
 
+.img-banner{
+  width: 150px;
+  height: auto;
+}
+
 button {
   margin: .3rem 0;
   padding: .4rem 1rem;
