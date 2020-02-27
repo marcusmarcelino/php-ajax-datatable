@@ -32,7 +32,7 @@ tabelas: events, estados
 ```
 
 ## Página Home
-<img align="center" src="./img/tela.png></img>
+<img align="center" src="./img/tela.png"></img>
 
 ## Licença
 
