@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test-4vets</title>
-  <link rel="shortcut icon" href="logo.svg">
-  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.css" />
+  <script src="https://kit.fontawesome.com/c08cea7233.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="jumbotron">
     <div class="container">
         <h1 class="display">Cadastro de Eventos</h1>
-        <img class="img-banner" src="banner.svg" alt="Logo Eventos">
+        <img class="img-banner" src="img/banner.svg" alt="Logo Eventos">
         <p class="lead">Um CRUD de eventos, DataTable - utilizando Javascript, jQuery, Ajax, PHP, MySql.
         </p>
         <hr>
@@ -49,14 +50,14 @@
         </div>
         <input type="hidden" id="editRowID" value="0">
         <div class="footer">
-            <button onclick="save()" class="btn btn-primary">Salvar</button>
+            <button onclick="save()">Salvar</button>
         </div>
       </form>
     </div>
 
     <div class="container">
       <table id="tabelaDeEventos" class="table" cellspacing="0" rules="none">
-          <thead class="thead-dark">
+          <thead>
               <tr>
                   <th>Id</th>
                   <th>Evento</th>
