@@ -94,6 +94,29 @@ function isNotEmpty(element) {
   }
 }
 
+function edit(id) {
+  $.ajax({
+     url: 'controller.php?op=setInfo',
+     method: 'GET',
+     dataType: 'json',
+     data: {
+        id: id
+     },
+     success: function () {
+        $("#modalForm").modal('show');
+     }
+  }).done(function (response) {
+     $('#editRowID').val(id);
+     $('#nomeEvento').val(response.nome_evento);
+     $('#localEvento').val(response.local_evento);
+     $('#dataEvento').val(response.data_evento);
+     $('#cidadeEvento').val(response.cidade_evento);
+     $('#estadoEvento').val(response.estado_evento);
+  }).fail(function (error) {
+     console.log(error);
+  });
+}
+
 function limparCampos() {
   $('#nomeEvento').val('');
   $('#localEvento').val('');
