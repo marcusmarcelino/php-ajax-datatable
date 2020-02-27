@@ -1,5 +1,9 @@
 # php-ajax-datatable
 
+<div align="center">
+  <img height="200" width="200" src="./img/logo.svg" align="center"></img>
+</div>
+
 ## Aplicação PHP E JAVASCCRIPT
 
 Projeto, sistema de cadastramento de eventos, em PHP e Javascript.
@@ -26,3 +30,10 @@ $database = 'crud-event';
 database: crud-event
 tabelas: events, estados
 ```
+
+## Página Home
+<img align="center" src="./img/tela.png></img>
+
+## Licença
+
+[MIT](./LICENSE) .
