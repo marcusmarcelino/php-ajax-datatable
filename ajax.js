@@ -86,6 +86,14 @@ function save() {
   }
 }
 
+function isNotEmpty(element) {
+  if (element.val() == '') {
+     return false
+  } else {
+     return true;
+  }
+}
+
 function limparCampos() {
   $('#nomeEvento').val('');
   $('#localEvento').val('');
