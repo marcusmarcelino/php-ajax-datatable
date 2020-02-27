@@ -1,0 +1,28 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgba(61, 43, 226, 0.815);
+  font-family: sans-serif;
+}
+
+.jumbotron {
+  text-align: center;
+  color: #fff;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+.content-grid{
+  display: grid;
+  grid-template-columns: 250px auto;
+}
+
+.row{
+  margin-top: .5rem;
+}
+
+.btn-content{
+  text-align: center;
+}
