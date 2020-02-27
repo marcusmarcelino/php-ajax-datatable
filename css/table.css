@@ -1,0 +1,63 @@
+table{
+  width: 100%;
+}
+
+table.dataTable.no-footer {
+  border-bottom: 1px solid #392dbb!important;
+  border-radius: 5px;
+}
+
+tbody{
+  border-spacing: 0;
+  border-collapse: collapse;
+  border:none
+}
+
+#tabelaDeEventos{
+  background-color: #4d40d1;
+}
+
+#tabelaDeEventos tbody tr:nth-child(2n){
+  background-color: rgb(96, 82, 231);
+}
+
+#tabelaDeEventos tbody tr:nth-child(2n+1){
+  background-color: rgba(42, 31, 160, 0.55);
+}
+
+#tabelaDeEventos tbody tr:hover{
+  background-color: rgb(64, 50, 216);
+}
+
+table.dataTable.no-footer {
+  margin-top: 1rem;
+}
+
+table,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_length, 
+.dataTables_wrapper .dataTables_filter,
+#tabelaDeEventos_paginate a{
+  color: #fff!important;
+}
+
+div#tabelaDeEventos_paginate span a:active{
+  background-image: linear-gradient(45deg, #311fd4, #311fd4);
+}
+
+div#tabelaDeEventos_paginate span a:hover{
+  background-image: linear-gradient(45deg, #13049c, #13049c);
+}
+
+div#tabelaDeEventos_paginate span a{
+  padding: 10px;
+  color: #fff!important;
+  background-image: linear-gradient(45deg, #29207d, #29207d);
+  border: none;
+}
+
+table.dataTable thead th,table.dataTable thead td{padding:10px 18px;border-bottom:1px solid #1111111f!important}
+
+table.dataTable tbody th, table.dataTable tbody td {
+  padding: 5px 10px!important;
+}
