@@ -103,7 +103,6 @@ function edit(id) {
         id: id
      },
      success: function () {
-        $("#modalForm").modal('show');
      }
   }).done(function (response) {
      $('#editRowID').val(id);
