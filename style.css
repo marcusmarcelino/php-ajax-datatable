@@ -1,0 +1,52 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgba(61, 43, 226, 0.815);
+
+  font-family: sans-serif;
+}
+
+.jumbotron {
+  text-align: center;
+  color: #fff;
+}
+
+hr{
+
+  border-top: 1px solid rgba(164, 163, 177, 0.815);
+
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+.content-grid{
+  display: grid;
+  grid-template-columns: 250px auto;
+}
+
+table{
+  width: 100%;
+  color: #fff;
+}
+
+form{
+  width: 100%;
+  background-color: rgba(72, 58, 202, 0.733);
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  
+}
+
+form label{
+  color: #fff;
+}
+
+input {
+  width: 100%;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
