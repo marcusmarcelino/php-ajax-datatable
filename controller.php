@@ -88,7 +88,6 @@ function save(){
      $estado_evento = $_POST['estado_evento'];
      $data_evento = $_POST['data_evento'];
      $id = $_POST['editRowID'];
-
      if($id != ''){
         mysqli_query($conn, "UPDATE events SET nome_evento='$nome_evento', local_evento='$local_evento', cidade_evento='$cidade_evento', estado_evento='$estado_evento', data_evento='$data_evento' WHERE id='$id'") or die($mysqli->error);
         exit ("O registro foi atualizado!!");
