@@ -1,6 +1,8 @@
-body{
-  margin: 0;
+html,body{
   padding: 0;
+}
+
+body{
   background-color: rgba(61, 43, 226, 0.815);
   font-family: sans-serif;
 }
