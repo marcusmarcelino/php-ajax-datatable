@@ -39,6 +39,7 @@ local_evento: varchar(20)
 cidade_evento: varchar(15)
 estado_evento: char(2)
 data_evento: Date
+time_evento: time
 ```
 
 ## table-estados

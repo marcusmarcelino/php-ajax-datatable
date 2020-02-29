@@ -20,7 +20,6 @@ switch ($op) {
       echo "Entrou na opção default";
       break;
 }
-
 function getList(){
    include_once("conexao.php");
    if (isset($_GET)) {

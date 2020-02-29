@@ -5,7 +5,6 @@ $(document).ready(function () {
   getList();
   listEstados();
 });
-
 function getList() {
   $.ajax({
      url: 'controller.php?op=getList',
