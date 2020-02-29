@@ -54,6 +54,7 @@ Insira os dados de estados manualmente para que a listagem de estados apareça n
 e cadastre um evento qualquer para que a listagem de eventos no datatable funcione, isso poderá ser feito através do painel do phpMyAdmin. 
 
 ## Página Home
+
 <img align="center" src="./img/tela.png"></img>
 
 ## Licença
