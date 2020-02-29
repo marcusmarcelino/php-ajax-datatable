@@ -59,6 +59,7 @@ function save() {
      isNotEmpty($('#nomeEvento')) &&
      isNotEmpty($('#localEvento')) &&
      isNotEmpty($('#dataEvento')) &&
+     isNotEmpty($('#timeEvento')) &&
      isNotEmpty($('#cidadeEvento')) &&
      isNotEmpty($('#estadoEvento'))
   ) {
@@ -72,6 +73,7 @@ function save() {
            cidade_evento: $('#cidadeEvento').val(),
            estado_evento: $('#estadoEvento option:selected').val(),
            data_evento: $('#dataEvento').val(),
+           time_evento: $('#timeEvento').val(),
            editRowID: $('#editRowID').val()
         },
         success: function () {
@@ -110,6 +112,7 @@ function edit(id) {
      $('#nomeEvento').val(response.nome_evento);
      $('#localEvento').val(response.local_evento);
      $('#dataEvento').val(response.data_evento);
+     $('#timeEvento').val(response.time_evento);
      $('#cidadeEvento').val(response.cidade_evento);
      $('#estadoEvento').val(response.estado_evento);
   }).fail(function (error) {
@@ -123,6 +126,7 @@ function limparCampos() {
   $('#cidadeEvento').val('');
   $('#estadoEvento').val('');
   $('#dataEvento').val('');
+  $('#timeEvento').val('');
   $("#editRowID").val('');
 }
 

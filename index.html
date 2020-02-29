@@ -24,9 +24,9 @@
     <div class="container">
       <form method="POST" action="" data-toggle="validator" role="form">
         <div class="row">
-            <label for="Nome">Nome do Evento</label>
-            <input type="text" class="form-control" name="nomeEvento" id="nomeEvento"
-                aria-describedby="nomeId" placeholder="Nome do Evento" required>
+          <label for="Nome">Nome do Evento</label>
+          <input type="text" class="form-control" name="nomeEvento" id="nomeEvento"
+              aria-describedby="nomeId" placeholder="Nome do Evento" required>
         </div>
         <div class="row">
           <label for="Local">Local do Evento</label>
@@ -34,9 +34,14 @@
               aria-describedby="localId" placeholder="Local do Evento" required>
         </div>
         <div class="row">
-            <label for="Data">Data do Evento</label>
-            <input type="date" class="form-control" name="dataEvento" id="dataEvento"
-                aria-describedby="dataId" placeholder="Data do Evento" required>
+          <label for="Data">Data do Evento</label>
+          <input type="date" class="form-control" name="dataEvento" id="dataEvento"
+              aria-describedby="dataId" placeholder="Data do Evento" required>
+        </div>
+        <div class="row">
+          <label for="Hora">Horário do Evento</label>
+          <input type="time" class="form-control" name="timeEvento" id="timeEvento"
+            aria-describedby="timeEvento" placeholder="Horário do Evento" required>
         </div>
         <div class="row">
           <label for="Cidade">Cidade</label>
@@ -44,9 +49,9 @@
               aria-describedby="cidadeId" placeholder="Cidade do Evento" required>
         </div>
         <div class="row">
-            <label for="Estado">Estado</label>
-            <select id="estadoEvento" class="form-control" required>
-            </select>
+          <label for="Estado">Estado</label>
+          <select id="estadoEvento" class="form-control" required>
+          </select>
         </div>
         <input type="hidden" id="editRowID" value="0">
         <div class="footer">
@@ -63,6 +68,7 @@
                   <th>Evento</th>
                   <th>Local</th>
                   <th>Data</th>
+                  <th>Horário</th>
                   <th>Opções</th>
               </tr>
           </thead>
